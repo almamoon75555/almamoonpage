@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  body{
+    margin:0;
+    background:#111;           /* عشان تشوفه بالمتصفح (في OBS تقدر تخليه transparent) */
+    font-family: Arial, Tahoma, sans-serif;
+  }
+
+  .bar{
+    position:fixed; left:0; right:0; bottom:0;
+    height:50px;
+    display:flex;
+    align-items:center;
+    background:rgba(0,0,0,0.75);
+  }
+
+  .label{
+    padding:0 18px;
+    height:100%;
+    display:flex;
+    align-items:center;
+    background:rgba(255,0,0,0.9);
+    color:#fff;
+    font-weight:700;
+    font-size:26px;
+    white-space:nowrap;
+  }
+
+  .ticker{
+    flex:1;
+    overflow:hidden;
+    position:relative;
+    height:50%;
+    display:flex;
+    align-items:center;
+    color:#fff;
+    font-size:20px;
+  }
+
+.move{
+  display:inline-block;
+  white-space:nowrap;
+  padding-right:40px;
+  transform:translateX(-100%);
+  animation: scroll 18s linear infinite;
+}
+
+
+@keyframes scroll{
+  0%   { transform:translateX(-100%); }
+  100% { transform:translateX(100%); }
+}
+
+  }
+</style>
+</head>
+<body>
+
+  <div class="bar">
+    <div class="label">اخبار شبكة الزير نت</div>
+    <div class="ticker">
+      <div class="move">
+        📢 إذا كنت ترغب في إضافة محلك أو بقالتك كنقطة بيع لكروت الإنترنت الخاصة بنا، تواصل معنا عبر واتساب: 777147351 / 772228207
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
